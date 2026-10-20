@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fenara — okna i drzwi aluminiowe na wymiar</title>
+  <meta name="description" content="Fenara projektuje i produkuje okna, drzwi i konstrukcje szklane z aluminium — na wymiar, dla domów i obiektów komercyjnych.">
+  <meta name="theme-color" content="#1B2233">
+  <meta property="og:title" content="Fenara — okna i drzwi aluminiowe na wymiar">
+  <meta property="og:description" content="Stolarka aluminiowa premium: okna, drzwi, fasady i ogrody zimowe projektowane na wymiar.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-dusk.webp" media="(min-width: 701px)">
+  <link rel="preload" as="image" href="assets/img/hero-dusk-mobile.webp" media="(max-width: 700px)">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    if (/[?&]motion=1\b/.test(location.search)) document.documentElement.classList.add('force-motion');
+    // failsafe: if animations never start, show content anyway
+    setTimeout(function () { if (!window.__fenaraReady) document.documentElement.classList.add('no-anim'); }, 2500);
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" data-header>
+    <a class="logo" href="#top" aria-label="Fenara — strona główna">
+      <svg class="logo__mark" width="33" height="28" viewBox="0 0 52 44" aria-hidden="true"><path d="M0 0H21V5.5H6V12.5H18V18H6V30H0V0Z"/><path d="M24 44V27C24 20.9 28.9 16 35 16H38C44.1 16 49 20.9 49 27V44H43V27.5C43 24.5 40.5 22 37.5 22H35.5C32.5 22 30 24.5 30 27.5V44H24Z"/></svg>
+      <span class="logo__word">Fenara</span>
+    </a>
+    <nav class="nav" aria-label="Główna nawigacja">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="#uslugi">Usługi</a></li>
+        <li><a class="nav__link" href="#realizacje">Realizacje</a></li>
+        <li><a class="nav__link" href="#proces">Proces</a></li>
+        <li><a class="nav__link" href="#opinie">Opinie</a></li>
+      </ul>
+      <a class="btn btn--dark btn--s" href="#kontakt"><span class="btn__label" data-label="Poproś o wycenę">Poproś o wycenę</span></a>
+    </nav>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" data-menu-open>
+      <span>Menu</span><span class="menu-btn__icon" aria-hidden="true"><i></i><i></i></span>
+    </button>
+  </header>
+
+  <!-- ================= MOBILE MENU ================= -->
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+    <div class="menu__top">
+      <a class="logo logo--light" href="#top" data-menu-link aria-label="Fenara — strona główna">
+        <svg class="logo__mark" width="30" height="26" viewBox="0 0 52 44" aria-hidden="true"><path d="M0 0H21V5.5H6V12.5H18V18H6V30H0V0Z"/><path d="M24 44V27C24 20.9 28.9 16 35 16H38C44.1 16 49 20.9 49 27V44H43V27.5C43 24.5 40.5 22 37.5 22H35.5C32.5 22 30 24.5 30 27.5V44H24Z"/></svg>
+        <span class="logo__word">Fenara</span>
+      </a>
+      <button class="icon-btn icon-btn--glass" type="button" aria-label="Zamknij menu" data-menu-close>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4.5 4.5L13.5 13.5M13.5 4.5L4.5 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <ul class="menu__list">
+      <li><a href="#uslugi" data-menu-link><small>01</small>Usługi</a></li>
+      <li><a href="#realizacje" data-menu-link><small>02</small>Realizacje</a></li>
+      <li><a href="#proces" data-menu-link><small>03</small>Proces</a></li>
+      <li><a href="#opinie" data-menu-link><small>04</small>Opinie</a></li>
+      <li><a href="#kontakt" data-menu-link><small>05</small>Kontakt</a></li>
+    </ul>
+    <div class="menu__foot">
+      <a class="btn btn--light btn--block" href="#kontakt" data-menu-link><span class="btn__label" data-label="Poproś o wycenę">Poproś o wycenę</span></a>
+      <div class="menu__contact"><a href="tel:+48221002030">+48 22 100 20 30</a><a href="mailto:biuro@fenara.pl">biuro@fenara.pl</a></div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ================= 01 HERO ================= -->
+    <section class="hero" id="top">
+      <div class="hero__card" data-hero-card>
+        <picture class="hero__media" data-hero-media>
+          <source media="(max-width: 700px)" srcset="assets/img/hero-dusk-mobile.webp" width="768" height="1376">
+          <img class="hero__img" src="assets/img/hero-dusk.webp" width="1264" height="848" alt="Nowoczesny dom o czarnej elewacji z dużymi aluminiowymi przeszkleniami, oświetlony od środka o zmierzchu" fetchpriority="high">
+        </picture>
+        <div class="hero__content" data-hero-content>
+          <span class="badge badge--glass" data-hero-item><i class="badge__dot"></i>Stolarka aluminiowa premium</span>
+          <h1 class="hero__title" data-hero-title>
+            <span class="line"><span>Okna i drzwi</span></span>
+            <span class="line"><span>aluminiowe</span></span>
+            <span class="line soft"><span>na wymiar</span></span>
+          </h1>
+          <div class="hero__ctas" data-hero-item>
+            <a class="cta" href="#kontakt">
+              <span class="btn btn--light"><span class="btn__label" data-label="Poproś o wycenę">Poproś o wycenę</span></span>
+              <span class="icon-btn icon-btn--light" data-magnetic><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <a class="btn btn--ghost-light" href="#realizacje"><span class="btn__label" data-label="Zobacz realizacje">Zobacz realizacje</span></a>
+          </div>
+        </div>
+        <div class="chip chip--glass hero__chip" data-hero-item><i class="chip__dot"></i><b>Dom Zmierzch</b><span>· Mazury, 2025</span></div>
+        <a class="hero__scroll" href="#manifest" data-hero-item aria-label="Przewiń do treści"><span>Przewiń</span><i></i></a>
+      </div>
+    </section>
+
+    <!-- ================= 02 MANIFEST ================= -->
+    <section class="manifest" id="manifest">
+      <div class="container">
+        <span class="badge" data-reveal><i class="badge__dot"></i>O nas</span>
+        <p class="manifest__text" data-words>Dobre okno to nie produkt, lecz <em>kadr</em>. Projektujemy aluminium i szkło tak, by Twój dom każdego dnia otwierał się na <em>światło</em>, widok i ciszę — a&nbsp;przy tym zostawał ciepły.</p>
+        <dl class="stats">
+          <div class="stat" data-reveal><dt>lat doświadczenia</dt><dd><span data-count="25">25</span>+</dd></div>
+          <div class="stat" data-reveal><dt>zrealizowanych projektów</dt><dd><span data-count="1200" data-format="space">1 200</span></dd></div>
+          <div class="stat" data-reveal><dt>gwarancji na systemy</dt><dd><span data-count="10">10</span> lat</dd></div>
+          <div class="stat" data-reveal><dt>na bezpłatną wycenę</dt><dd><span data-count="48">48</span> h</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= 03 USŁUGI ================= -->
+    <section class="services section" id="uslugi">
+      <div class="container">
+        <div class="head">
+          <div class="head__main">
+            <span class="badge" data-reveal><i class="badge__dot"></i>Usługi</span>
+            <h2 class="h2" data-split>Kompleksowe realizacje <span class="soft">stolarki aluminiowej</span></h2>
+          </div>
+          <div class="head__side" data-reveal>
+            <p class="lead">Okna, drzwi i konstrukcje szklane projektowane indywidualnie — dla inwestycji prywatnych, deweloperskich i komercyjnych.</p>
+            <a class="cta" href="#kontakt">
+              <span class="btn btn--dark"><span class="btn__label" data-label="Zapytaj o projekt">Zapytaj o projekt</span></span>
+              <span class="icon-btn icon-btn--dark" data-magnetic><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="services__grid" data-services>
+          <div class="services__media" data-reveal-img>
+            <img class="services__img is-active" src="assets/img/conservatory.webp" width="1024" height="1024" alt="Ogród zimowy z czarnymi ramami aluminiowymi i jesiennymi drzewami za szybą" loading="lazy" data-panel-img="0">
+            <img class="services__img" src="assets/img/dining.webp" width="900" height="725" alt="Jadalnia oddzielona od ogrodu przeszkloną ścianą w czarnych ramach" loading="lazy" data-panel-img="1">
+            <img class="services__img" src="assets/img/pavilion.webp" width="1584" height="672" alt="Biurowiec z fasadą słupowo-ryglową z aluminium i szkła" loading="lazy" data-panel-img="2">
+            <img class="services__img" src="assets/img/living.webp" width="900" height="725" alt="Salon z panoramicznym oknem w czarnej ramie z widokiem na las" loading="lazy" data-panel-img="3">
+            <div class="thumbs" role="group" aria-label="Wybierz usługę">
+              <button class="thumb is-active" type="button" data-thumb="0" aria-label="Ogrody zimowe"><img src="assets/img/conservatory-2.webp" alt="" loading="lazy"></button>
+              <button class="thumb" type="button" data-thumb="1" aria-label="Ściany działowe"><img src="assets/img/dining.webp" alt="" loading="lazy"></button>
+              <button class="thumb" type="button" data-thumb="2" aria-label="Fasady aluminiowe"><img src="assets/img/pavilion.webp" alt="" loading="lazy"></button>
+              <button class="thumb" type="button" data-thumb="3" aria-label="Okna i drzwi"><img src="assets/img/window.webp" alt="" loading="lazy"></button>
+            </div>
+          </div>
+
+          <div class="services__info" data-reveal>
+            <div class="tabs" role="tablist" aria-label="Usługi">
+              <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-0" id="tab-0" data-tab="0">Ogrody zimowe</button>
+              <button class="tab" role="tab" aria-selected="false" aria-controls="panel-1" id="tab-1" data-tab="1" tabindex="-1">Ściany działowe</button>
+              <button class="tab" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" data-tab="2" tabindex="-1">Fasady aluminiowe</button>
+              <button class="tab" role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" data-tab="3" tabindex="-1">Okna i drzwi</button>
+            </div>
+            <div class="panels">
+              <div class="panel is-active" role="tabpanel" id="panel-0" aria-labelledby="tab-0">
+                <h3 class="serif-title">Ogrody zimowe</h3>
+                <p>Przeszklone dachy i ściany połączone w jedną, spójną konstrukcję. Projektujemy ogrody zimowe o dowolnej formie — całoroczne, ciepłe i jasne.</p>
+                <ul class="specs"><li><b>Uw od 0,9</b>W/m²K</li><li><b>do 6 m</b>rozpiętości dachu</li><li><b>8–12</b>tygodni realizacji</li></ul>
+              </div>
+              <div class="panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden>
+                <h3 class="serif-title">Ściany działowe</h3>
+                <p>Szklane przegrody, które dzielą przestrzeń, a nie światło. Smukłe profile, ciche drzwi przesuwne i akustyka dopasowana do biura lub domu.</p>
+                <ul class="specs"><li><b>do 42 dB</b>izolacji akustycznej</li><li><b>20 mm</b>widoczny profil</li><li><b>4–6</b>tygodni realizacji</li></ul>
+              </div>
+              <div class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+                <h3 class="serif-title">Fasady aluminiowe</h3>
+                <p>Systemy słupowo-ryglowe i strukturalne dla budynków komercyjnych. Od koncepcji przez obliczenia statyczne po montaż na wysokości.</p>
+                <ul class="specs"><li><b>do 12 m</b>wysokości modułu</li><li><b>RC2</b>klasa antywłamaniowa</li><li><b>BIM</b>dokumentacja</li></ul>
+              </div>
+              <div class="panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
+                <h3 class="serif-title">Okna i drzwi</h3>
+                <p>Okna panoramiczne, systemy przesuwne HS i drzwi wejściowe. Ciepłe, ciche i smukłe — z okuciami ukrytymi w profilu.</p>
+                <ul class="specs"><li><b>3 m</b>wysokości skrzydła</li><li><b>Uw od 0,8</b>W/m²K</li><li><b>RAL</b>dowolny kolor</li></ul>
+              </div>
+            </div>
+            <figure class="quote">
+              <blockquote>„Zespół Fenary zaproponował rozwiązanie skrojone pod nasz dom. Świetne wykonanie, dotrzymane terminy i jasna komunikacja na każdym etapie.”</blockquote>
+              <figcaption class="author"><img src="assets/img/marta.webp" width="44" height="44" alt="" loading="lazy"><span><b>Marta Wierzbicka</b>Inwestorka prywatna</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 04 REALIZACJE ================= -->
+    <section class="work section" id="realizacje">
+      <div class="container">
+        <div class="head">
+          <div class="head__main">
+            <span class="badge" data-reveal><i class="badge__dot"></i>Realizacje</span>
+            <h2 class="h2" data-split>Realizacje, które <span class="soft">mówią same za siebie</span></h2>
+          </div>
+          <div class="pager" data-reveal>
+            <button class="icon-btn icon-btn--line" type="button" aria-label="Poprzedni projekt" data-work-prev><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M15 9H3M3 9L8 4M3 9L8 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <span class="pager__count"><b data-work-index>01</b> / 03</span>
+            <button class="icon-btn icon-btn--dark" type="button" aria-label="Następny projekt" data-work-next data-magnetic><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+
+        <div class="work__card" data-reveal-img>
+          <div class="compare" data-compare style="--pos: 50%" data-cursor="Przeciągnij">
+            <img class="compare__img compare__img--before" src="assets/img/pavilion-bw.webp" width="1584" height="672" alt="Wizualizacja projektu (czarno-biała)" data-work-before>
+            <img class="compare__img compare__img--after" src="assets/img/pavilion.webp" width="1584" height="672" alt="Zrealizowany budynek z fasadą z aluminium i szkła" data-work-after>
+            <span class="label-chip compare__label compare__label--before">Wizualizacja</span>
+            <span class="label-chip compare__label compare__label--after">Realizacja</span>
+            <div class="compare__handle" role="slider" tabindex="0" aria-label="Porównaj wizualizację z realizacją" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" data-compare-handle>
+              <span class="compare__knob"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M8 6L4 10L8 14M12 6L16 10L12 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </div>
+          </div>
+          <div class="work__info" data-work-info>
+            <div class="work__main">
+              <h3 class="work__title serif" data-work-title>Siedziba studia<br>Lasowa Atelier</h3>
+              <p class="work__meta" data-work-meta><span>Budynek komercyjny</span><i></i><span>Stare Babice k. Warszawy</span></p>
+            </div>
+            <dl class="work__rows">
+              <div><dt>Cel</dt><dd data-work-goal>Reprezentacyjna, nowoczesna elewacja, która od pierwszego spojrzenia buduje wizerunek marki.</dd></div>
+              <div><dt>Rozwiązanie</dt><dd data-work-solution>Fasada słupowo-ryglowa z aluminium i szkła, zaprojektowana pod nietypową, wysuniętą bryłę dachu.</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 05 PROCES ================= -->
+    <section class="process" id="proces" data-process>
+      <div class="process__inner">
+        <div class="container process__head">
+          <div class="head__main">
+            <span class="badge" data-reveal><i class="badge__dot"></i>Proces</span>
+            <h2 class="h2" data-split>Jak przebiega <span class="soft">realizacja</span> Twojego projektu</h2>
+          </div>
+          <div class="process__meta" data-reveal>
+            <p class="lead">Prosty, przejrzysty proces, który daje Ci pełną kontrolę — od pierwszej rozmowy po montaż gotowego systemu.</p>
+            <div class="process__progress"><span class="process__count"><b data-process-index>01</b> / 04</span><span class="process__bar"><i data-process-bar></i></span></div>
+          </div>
+        </div>
+        <div class="process__viewport">
+          <ol class="process__track" data-process-track>
+            <li class="step">
+              <div class="step__img"><img src="assets/img/living.webp" width="900" height="725" alt="Jasny salon z dużym oknem — rozmowa o potrzebach" loading="lazy"></div>
+              <div class="step__body"><div class="step__num"><b>01</b><i></i><span>Tydzień 1</span></div><h3 class="serif-title">Kontakt i konsultacja</h3><p>Rozmawiamy o potrzebach i oczekiwaniach, doradzamy najlepsze rozwiązania i odpowiadamy na kluczowe pytania.</p></div>
+            </li>
+            <li class="step">
+              <div class="step__img"><img src="assets/img/detail.webp" width="900" height="672" alt="Detal narożnika aluminiowej ramy przy suficie" loading="lazy"></div>
+              <div class="step__body"><div class="step__num"><b>02</b><i></i><span>Tydzień 2–3</span></div><h3 class="serif-title">Pomiar i projekt</h3><p>Sprawdzamy warunki na miejscu i przygotowujemy projekt dopasowany do architektury i funkcji.</p></div>
+            </li>
+            <li class="step">
+              <div class="step__img"><img src="assets/img/window.webp" width="900" height="725" alt="Okno w czarnej ramie aluminiowej" loading="lazy"></div>
+              <div class="step__body"><div class="step__num"><b>03</b><i></i><span>Tydzień 4–9</span></div><h3 class="serif-title">Produkcja</h3><p>Wytwarzamy profile i przeszklenia we własnym zakładzie, kontrolując jakość każdego elementu.</p></div>
+            </li>
+            <li class="step">
+              <div class="step__img"><img src="assets/img/dining.webp" width="900" height="725" alt="Gotowe przeszklenie z widokiem na ogród" loading="lazy"></div>
+              <div class="step__body"><div class="step__num"><b>04</b><i></i><span>Tydzień 10–12</span></div><h3 class="serif-title">Montaż i odbiór</h3><p>Montujemy w terminie, a po odbiorze zostajemy z Tobą w ramach serwisu i gwarancji.</p></div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 06 KORZYŚCI ================= -->
+    <section class="benefits section" id="korzysci" data-dark>
+      <div class="container">
+        <div class="head head--center">
+          <span class="badge badge--glass" data-reveal><i class="badge__dot"></i>Korzyści</span>
+          <h2 class="h2" data-split>Jak tworzymy <span class="soft">rozwiązania dopasowane</span> do Twojego domu</h2>
+          <p class="lead" data-reveal>Projektujemy przeszklone konstrukcje tak, by poprawiały komfort codziennego życia i jakość przestrzeni.</p>
+        </div>
+        <div class="benefits__grid">
+          <div class="benefits__media">
+            <figure class="portrait" data-reveal-img data-cursor="Odtwórz">
+              <img src="assets/img/karolina.webp" width="896" height="1200" alt="Karolina Zięba, architektka wnętrz" loading="lazy" data-parallax>
+              <figcaption class="portrait__quote">„Dom zrobił się większy, choć nie dobudowaliśmy ani metra.”<span>Karolina Zięba · architektka wnętrz</span></figcaption>
+              <span class="play" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M5 3.2L12.5 8L5 12.8V3.2Z" fill="currentColor"/></svg></span>
+            </figure>
+          </div>
+          <ol class="benefits__list">
+            <li class="benefit" data-benefit>
+              <span class="benefit__num">01</span>
+              <h3 class="serif-title">Otwórz dom na naturalne światło</h3>
+              <p>Smukłe profile i wielkie tafle szkła wpuszczają do wnętrza więcej światła dziennego — pokoje optycznie rosną, a granica z ogrodem znika.</p>
+              <span class="tag">Więcej światła</span>
+            </li>
+            <li class="benefit" data-benefit>
+              <span class="benefit__num">02</span>
+              <h3 class="serif-title">Ciepło zimą, chłód latem</h3>
+              <p>Trzyszybowe pakiety, ciepłe ramki i przekładki termiczne w profilach ograniczają straty energii i przegrzewanie w upały.</p>
+              <span class="tag">Lepsza izolacja</span>
+            </li>
+            <li class="benefit" data-benefit>
+              <span class="benefit__num">03</span>
+              <h3 class="serif-title">Cisza, którą słychać</h3>
+              <p>Szyby akustyczne i precyzyjne uszczelki odcinają hałas ulicy. Zostaje tylko to, co chcesz usłyszeć.</p>
+              <span class="tag">Ciche wnętrza</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 07 OPINIE ================= -->
+    <section class="reviews section" id="opinie">
+      <div class="container">
+        <div class="head head--center">
+          <span class="badge" data-reveal><i class="badge__dot"></i>Opinie klientów</span>
+          <h2 class="h2" data-split><span class="soft">Doświadczenia,</span> które budują zaufanie</h2>
+          <p class="lead" data-reveal>Opinie klientów prywatnych i biznesowych, którzy docenili jakość współpracy na każdym etapie.</p>
+        </div>
+      </div>
+      <div class="marquee" data-marquee>
+        <div class="marquee__row" data-marquee-row data-direction="-1">
+          <article class="review"><p>„Od pierwszej rozmowy czuliśmy, że projekt jest prowadzony indywidualnie. Ogromny plus za dbałość o detale.”</p><footer class="author"><img src="assets/img/marta.webp" width="36" height="36" alt="" loading="lazy"><span><b>Agnieszka Lis</b>Inwestorka prywatna</span></footer></article>
+          <article class="review"><p>„Wysoka jakość wykonania i pełna zgodność z wymaganiami technicznymi. Montaż przebiegł zgodnie z harmonogramem.”</p><footer class="author"><img src="assets/img/michal.webp" width="36" height="36" alt="" loading="lazy"><span><b>Michał Bednarek</b>Kierownik budowy</span></footer></article>
+          <article class="review review--video" data-cursor="Odtwórz"><img src="assets/img/tomasz.webp" width="765" height="1024" alt="Tomasz Krawiec, deweloper" loading="lazy"><span class="review__chip"><b>Tomasz Krawiec</b>Deweloper</span><span class="play" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M5 3.2L12.5 8L5 12.8V3.2Z" fill="currentColor"/></svg></span></article>
+          <article class="review"><p>„Fasada wyszła dokładnie tak, jak na wizualizacji. Współpraca z zespołem była konkretna i bezproblemowa.”</p><footer class="author"><img src="assets/img/karolina.webp" width="36" height="36" alt="" loading="lazy"><span><b>Ewa Rogalska</b>Architektka</span></footer></article>
+        </div>
+        <div class="marquee__row" data-marquee-row data-direction="1">
+          <article class="review review--video" data-cursor="Odtwórz"><img src="assets/img/joanna.webp" width="800" height="1071" alt="Joanna Wrona, inwestorka prywatna" loading="lazy"><span class="review__chip"><b>Joanna Wrona</b>Inwestorka prywatna</span><span class="play" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M5 3.2L12.5 8L5 12.8V3.2Z" fill="currentColor"/></svg></span></article>
+          <article class="review"><p>„Zaproponowane rozwiązanie idealnie wpisało się w nasz budżet i harmonogram. Polecamy bez wahania.”</p><footer class="author"><img src="assets/img/natalia.webp" width="36" height="36" alt="" loading="lazy"><span><b>Natalia Kurek</b>Project Manager, deweloper</span></footer></article>
+          <article class="review"><p>„Ogród zimowy zmienił sposób, w jaki korzystamy z domu. Teraz to nasze ulubione miejsce przez cały rok.”</p><footer class="author"><img src="assets/img/jan.webp" width="36" height="36" alt="" loading="lazy"><span><b>Jan Sowa</b>Inwestor prywatny</span></footer></article>
+          <article class="review"><p>„Szybka wycena, fachowe doradztwo przy wyborze systemu i świetny kontakt. Tak powinna wyglądać współpraca.”</p><footer class="author"><img src="assets/img/piotr.webp" width="36" height="36" alt="" loading="lazy"><span><b>Piotr Mazur</b>Inwestor prywatny</span></footer></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 08 KONTAKT ================= -->
+    <section class="contact" id="kontakt">
+      <div class="contact__card" data-reveal-card>
+        <div class="contact__intro">
+          <div>
+            <span class="badge badge--glass" data-reveal><i class="badge__dot"></i>Kontakt</span>
+            <h2 class="h2" data-split>Porozmawiajmy o <span class="soft">Twoim projekcie</span></h2>
+            <p class="lead" data-reveal>Opowiedz nam o swojej inwestycji — przygotujemy bezpłatną wycenę i zaproponujemy najlepsze rozwiązanie w ciągu 48 godzin.</p>
+          </div>
+          <dl class="contact__details" data-reveal>
+            <div><dt>Telefon</dt><dd><a href="tel:+48221002030">+48 22 100 20 30</a></dd></div>
+            <div><dt>E-mail</dt><dd><a href="mailto:biuro@fenara.pl">biuro@fenara.pl</a></dd></div>
+            <div><dt>Showroom</dt><dd>ul. Szklana 12<br>05-082 Stare Babice</dd></div>
+            <div><dt>Godziny</dt><dd>pn–pt 8:00–17:00</dd></div>
+          </dl>
+        </div>
+
+        <div class="form-wrap" data-reveal>
+          <form class="form" novalidate data-form>
+            <div class="form__row">
+              <div class="field"><label for="f-name">Imię i nazwisko</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Jan Kowalski" required><span class="field__error" aria-live="polite"></span></div>
+              <div class="field"><label for="f-email">E-mail</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="jan@firma.pl" required><span class="field__error" aria-live="polite"></span></div>
+            </div>
+            <div class="form__row">
+              <div class="field"><label for="f-phone">Telefon</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+48 000 000 000"><span class="field__error" aria-live="polite"></span></div>
+              <div class="field"><label for="f-place">Lokalizacja inwestycji</label><input id="f-place" name="place" type="text" placeholder="np. Warszawa"><span class="field__error" aria-live="polite"></span></div>
+            </div>
+            <fieldset class="field field--chips">
+              <legend>Rodzaj projektu</legend>
+              <div class="choices">
+                <label class="choice"><input type="radio" name="type" value="okna" checked><span>Okna i drzwi</span></label>
+                <label class="choice"><input type="radio" name="type" value="fasady"><span>Fasady</span></label>
+                <label class="choice"><input type="radio" name="type" value="ogrody"><span>Ogrody zimowe</span></label>
+                <label class="choice"><input type="radio" name="type" value="sciany"><span>Ściany działowe</span></label>
+              </div>
+            </fieldset>
+            <div class="field"><label for="f-msg">Wiadomość</label><textarea id="f-msg" name="message" rows="4" placeholder="Kilka słów o inwestycji, lokalizacji i terminie…"></textarea></div>
+            <div class="form__foot">
+              <label class="check"><input type="checkbox" name="consent" required><span class="check__box" aria-hidden="true"></span><span class="check__text">Wyrażam zgodę na kontakt w sprawie wyceny. Szczegóły w Polityce prywatności.</span></label>
+              <button class="cta" type="submit">
+                <span class="btn btn--dark"><span class="btn__label" data-label="Wyślij zapytanie">Wyślij zapytanie</span></span>
+                <span class="icon-btn icon-btn--dark"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9H15M15 9L10 4M15 9L10 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              </button>
+            </div>
+            <p class="form__note">To wersja demonstracyjna — formularz nie wysyła danych.</p>
+          </form>
+          <div class="form-success" hidden data-success>
+            <span class="form-success__icon"><svg width="26" height="26" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3.5 9.5L7 13L14.5 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3 class="serif-title">Dziękujemy za zapytanie</h3>
+            <p>Odezwiemy się w ciągu 48 godzin z bezpłatną wyceną. Kopię zgłoszenia wysłaliśmy na Twój adres e-mail.</p>
+            <button class="btn btn--outline" type="button" data-form-reset><span class="btn__label" data-label="Wyślij kolejne zapytanie">Wyślij kolejne zapytanie</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__intro">
+          <a class="logo logo--ink" href="#top" aria-label="Fenara — strona główna">
+            <svg class="logo__mark" width="33" height="28" viewBox="0 0 52 44" aria-hidden="true"><path d="M0 0H21V5.5H6V12.5H18V18H6V30H0V0Z"/><path d="M24 44V27C24 20.9 28.9 16 35 16H38C44.1 16 49 20.9 49 27V44H43V27.5C43 24.5 40.5 22 37.5 22H35.5C32.5 22 30 24.5 30 27.5V44H24Z"/></svg>
+            <span class="logo__word">Fenara</span>
+          </a>
+          <p>Okna, drzwi i konstrukcje szklane z aluminium — projektowane na wymiar.</p>
+        </div>
+        <nav class="footer__cols" aria-label="Stopka">
+          <div><h4>Nawigacja</h4><a href="#uslugi">Usługi</a><a href="#realizacje">Realizacje</a><a href="#proces">Proces</a><a href="#opinie">Opinie</a><a href="#kontakt">Kontakt</a></div>
+          <div><h4>Usługi</h4><a href="#uslugi">Okna i drzwi</a><a href="#uslugi">Fasady aluminiowe</a><a href="#uslugi">Ogrody zimowe</a><a href="#uslugi">Ściany działowe</a></div>
+          <div><h4>Kontakt</h4><a href="tel:+48221002030">+48 22 100 20 30</a><a href="mailto:biuro@fenara.pl">biuro@fenara.pl</a><span>ul. Szklana 12, 05-082 Stare Babice</span></div>
+          <div><h4>Social</h4><a href="#" aria-disabled="true">Instagram</a><a href="#" aria-disabled="true">LinkedIn</a><a href="#" aria-disabled="true">Pinterest</a></div>
+        </nav>
+      </div>
+      <div class="footer__word" aria-hidden="true" data-footer-word>Fenara</div>
+      <div class="footer__bottom">
+        <span>© 2026 Fenara. Marka fikcyjna — projekt koncepcyjny.</span>
+        <a class="to-top" href="#top">Do góry <svg width="14" height="14" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 15V3M9 3L4 8M9 3L14 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/SplitText.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
